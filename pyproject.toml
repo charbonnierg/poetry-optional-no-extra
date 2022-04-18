@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-optional-no-extra"
-version = "0.2.0"
+version = "0.3.0"
 description = ""
 authors = ["charbonnierg <guillaume.charbonnier@araymond.com>"]
 readme = "README.md"
@@ -8,7 +8,10 @@ packages = [{include = "pkg", from="src"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-click = "^8.1.2"
+click = { version = "^8.1.2", optional = true }
+
+[tool.poetry.extras]
+cli = ["click"]
 
 
 [build-system]
