@@ -3,7 +3,6 @@
 - Python 3.8.10
 - Poetry 1.2.0b1
 
-
 # Version 1
 
 ```toml
@@ -42,6 +41,22 @@ Classifier: Programming Language :: Python :: 3.10
 Requires-Dist: click (>=8.1.2,<9.0.0)
 Description-Content-Type: text/markdown
 ```
+
+Installation:
+
+```bash
+$ pip install ./dist/poetry_optional_no_extra-0.1.0-py3-none-any.whl
+```
+
+```bash
+Processing ~/github/charbonnierg/poetry-optional-no-extra/dist/poetry_optional_no_extra-0.1.0-py3-none-any.whl
+Collecting click<9.0.0,>=8.1.2
+  Using cached click-8.1.2-py3-none-any.whl (96 kB)
+Installing collected packages: click, poetry-optional-no-extra
+Successfully installed click-8.1.2 poetry-optional-no-extra-0.1.0
+```
+
+🧨 `click` is installed
 
 
 # Version 2
@@ -84,6 +99,22 @@ Classifier: Programming Language :: Python :: 3.10
 Requires-Dist: click (>=8.1.2,<9.0.0)
 Description-Content-Type: text/markdown
 ```
+
+Installation:
+
+```bash
+$ pip install ../dist/poetry_optional_no_extra-0.2.0-py3-none-any.whl
+```
+
+```bash
+Processing ~/github/charbonnierg/poetry-optional-no-extra/dist/poetry_optional_no_extra-0.2.0-py3-none-any.whl
+Collecting click<9.0.0,>=8.1.2
+  Using cached click-8.1.2-py3-none-any.whl (96 kB)
+Installing collected packages: click, poetry-optional-no-extra
+Successfully installed click-8.1.2 poetry-optional-no-extra-0.2.0
+```
+
+🧨 `click` is installed
 
 # Version 3
 
@@ -130,3 +161,16 @@ Requires-Dist: click (>=8.1.2,<9.0.0); extra == "cli"
 Description-Content-Type: text/markdown
 ```
 
+Installation:
+
+```bash
+$ pip install ../dist/poetry_optional_no_extra-0.3.0-py3-none-any.whl
+```
+
+```bash
+Processing ~/github/charbonnierg/poetry-optional-no-extra/dist/poetry_optional_no_extra-0.3.0-py3-none-any.whl
+Installing collected packages: poetry-optional-no-extra
+Successfully installed poetry-optional-no-extra-0.3.0
+```
+
+🎉 `click` is not installed
