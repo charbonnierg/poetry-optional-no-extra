@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-optional-no-extra"
+version = "0.1.0"
+description = ""
+authors = ["charbonnierg <guillaume.charbonnier@araymond.com>"]
+readme = "README.md"
+packages = [{include = "pkg", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = {version = "^8.1.2", optional = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
